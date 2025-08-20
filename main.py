@@ -27,11 +27,11 @@ st.header("🐦 Recipie Generator")
 
 st.subheader("Generate Recipies using Generative AI 🤖")
 
-topic = st.text_input("Topic")
+topic = st.text_input("Vegitable")
 
 number = st.number_input("Number of recipies", min_value = 1, max_value = 10, value = 1, step = 1)
 
 if st.button("Generate"):
-    tweets = tweet_chain.invoke({"number" : number, "topic" : topic})
+    tweets = tweet_chain.invoke({"number" : number, "vegitable" : topic})
     st.write(tweets.content)
     
