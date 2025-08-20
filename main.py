@@ -9,7 +9,7 @@ os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # Create prompt template for generating recipies
 
-recipie_template = "Give me {number} Recipies on {Vegitable}"
+recipie_template = "Give me {number} Recipies on {vegitable}"
 
 tweet_prompt = PromptTemplate(template = recipie_template, input_variables = ['number', 'vegitable'])
 
